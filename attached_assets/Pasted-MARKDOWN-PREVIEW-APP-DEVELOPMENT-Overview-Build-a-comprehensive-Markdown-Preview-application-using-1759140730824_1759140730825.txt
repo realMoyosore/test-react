@@ -1,0 +1,87 @@
+MARKDOWN PREVIEW APP DEVELOPMENT
+Overview
+Build a comprehensive Markdown Preview application using React that demonstrates your frontend engineering skills. This project will showcase your ability to work with real-time rendering, implement modern React patterns, handle routing (if applicable for advanced features), and create accessible user interfaces.
+
+TECHNICAL REQUIREMENTS
+Core Technologies:
+•	React 19+ with functional components and hooks
+•	React Router v7 for routing and navigation (primarily for bonus features like saving/loading files)
+•	Markdown Parsing Library: marked.js
+•	Styling: Tailwind CSS, Unocss
+
+Recommended Libraries:
+•	UI Library: ShadCN/UI
+•	Icons: React Icons
+•	Form Handling: React Form Hook
+
+API Information:
+Consider an API for saving/loading markdown content.
+•	Base URL: https://jsonplaceholder.typicode.com (for example, using /posts to simulate saving/loading content)
+
+REQUIREMENTS
+Core Functionality:
+1.	Markdown Input and Real-time Preview
+•	Create a text area where users can type or paste Markdown content.
+•	Implement real-time rendering of the Markdown content into HTML in a separate preview panel.
+•	Ensure proper rendering of common Markdown elements (headings, paragraphs, lists, bold/italic, links, images, code blocks).
+•	The input area and preview panel should be displayed side-by-side on desktop, and stacked on mobile.
+2.	Error Handling
+•	Implement an Error Boundary component to catch rendering errors within the application.
+•	Create a test route (e.g., /error-test) that triggers the error boundary.
+•	Design a custom 404 page for undefined routes.
+3.	UI/UX Standards
+•	Use semantic HTML and proper ARIA attributes.
+•	Ensure that responsive design works seamlessly on both mobile and desktop devices.
+•	Maintain consistent styling throughout the application.
+•	Include loading states or visual feedback if parsing large markdown files.
+4.	Live Syntax Highlighting in Editor
+•	Integrate a code editor library (e.g., CodeMirror, Monaco Editor) to provide syntax highlighting for Markdown in the input area.
+5.	File Operations
+•	Load from File: Allow users to upload an .md file from their local machine and display its content in the editor and preview.
+•	Save to File: Allow users to download the current Markdown content from the editor as a .md file.
+6.	Persistence (Special Recognition)
+•	Local Storage: Automatically save the user’s current Markdown content to local storage as they type, and load it on subsequent visits.
+•	API Integration for Saving/Loading: (Leveraging the “API Information” section)
+i.	Allow users to save their markdown content to a remote API.
+ii.	Allow users to retrieve previously saved markdown content from the API.
+
+UI/UX Requirements:
+1.	Design Standards:
+•	Consistent color scheme and typography.
+•	Responsive design (mobile-first approach).
+•	Intuitive layout for editor and preview.
+•	Professional appearance with attention to detail.
+
+2.	Accessibility Requirements:
+•	Semantic HTML elements (<main>, <nav>, <section>, etc.).
+•	ARIA labels and roles should be used where appropriate.
+•	Keyboard navigation support for input areas and controls.
+•	Color contrast compliance (WCAG AA).
+•	Screen reader-friendly content.
+•	Focus management and visual indicators.
+
+Documentation:
+Create a comprehensive README.md including:
+•	Project description and features.
+•	Installation and setup instructions.
+•	Available scripts and commands.
+•	Technology stack and architecture decisions (especially regarding Markdown parsing).
+•	API documentation and usage (if bonus API integration is implemented).
+•	Screenshots, GIFs, or videos of key features.
+•	Known issues or limitations.
+•	Future improvements planned.
+
+
+Development Workflow:
+1.	Start with basic Markdown input and real-time preview.
+2.	Add styling and responsive design.
+3.	Implement error handling and edge cases.
+4.	Add other features
+
+Common Pitfalls to Avoid:
+•	Not handling loading and error states.
+•	Forgetting to implement proper key props for lists (if dynamic lists are used in bonus features).
+•	Neglecting mobile responsiveness.
+•	Poor error boundary implementation.
+•	Missing accessibility considerations.
+•	Incorrect Markdown parsing or rendering.
